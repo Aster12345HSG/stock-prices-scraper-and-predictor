@@ -35,8 +35,8 @@ ticker_list = ['NVDA','GOOGL','MSFT']
 # The user of this code can get data for desired period of time by changing
 # the start date and end date below
 # Please note that dates follow YYYY-MM-DD format 
-start_date = "2015-01-01"
-end_date = "2020-01-01"
+start_date = "2016-01-01"
+end_date = "2021-01-01"
 files = []
 
 
