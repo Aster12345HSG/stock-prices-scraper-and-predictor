@@ -11,9 +11,10 @@
 
 # In order to run this code on your computer, you should have:
 # 1. Internet connection
-# 2. Installed the following libraries: pandas_datareader, datetime, yfinance, pandas, prophet, matplotlib (install using pip install in command prompt)
+# 2. Installed the following libraries: pandas_datareader, datetime, yfinance, pandas, prophet, matplotlib
 
-# I run this code on my computer in Visual Studio Code on Python 3.11.3 64-bit from Microsoft Store and it works with this configuration
+# To run this code, paste this code directly to a compiler and run. I run this code on my computer in 
+# Visual Studio Code on Python 3.11.3 64-bit from Microsoft Store and it works in this configuration
 
 # Import the necessary libraries and packages
 from pandas_datareader import data as pdr
@@ -40,7 +41,7 @@ end_date = "2021-01-01"
 files = []
 
 
-
+# Getting the data for stocks and period specified above by the user:
 def getData(ticker):
     print(ticker)
     # Get data using Yahoo Finance API
@@ -102,7 +103,7 @@ def predict_stock_price(df, ticker):
     model.fit(data)
 
     # Number of future time steps to predict
-    future_steps = 30  # This is the number of days in the future that the 
+    future_steps = 30  # This is the number of days in the future that 
                        # the program will predict
                        # Adjust the number of steps as needed
 
@@ -129,13 +130,13 @@ for ticker in ticker_list:
 # check retrospectively if it was correct and it seems to have a decent 
 # correctness rate of about 65% for predicting them up to a month into the 
 # future (which is not as good as 100% of course, but better than the odds 
-# of pure chance which are 50%).
+# of pure chance which are 50%, especially for a small program).
 
 # This program could also be easily adjusted to serve one's needs. I, for 
 # example, could use this program to make graphs for my Bachelor Thesis if I
-# wrote my thesis about specific stocks and specific periods. In this case, I could 
-# scrape Yahoo Finance for specific data and then replace the Prophet based 
-# stock prediction model with simple Matplotlib library to create elegant 
-# graphs that contain only the data that I need in order to improve my 
-# written assignment.  
+# wrote my thesis about specific stocks and specific periods. In this case, 
+# I could use this code to scrape Yahoo Finance for specific data and then 
+# replace the Prophet based stock prediction model with simple Matplotlib 
+# library to create elegant graphs that contain only the data that I need 
+# in order to improve my written assignment.  
 
