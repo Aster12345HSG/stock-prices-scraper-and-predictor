@@ -2,7 +2,7 @@
 # CodingXCamp nickname: Aster12345
 
 # The following is a simple piece of code that scrapes stock market financial data from Yahoo Finance
-# After scraping, it saves the data for desired stocks and time periods as csv files on the computer
+# After scraping, it saves basic statistical data for desired stocks and time periods as csv files on the computer
 # After saving them, it imports those files back to Python for analysis and future price prediction
 
 # Acknowledgments to: R Junaid Raza for source code that served as base for scraping stock data
@@ -11,7 +11,7 @@
 
 # In order to run this code on your computer, you should have:
 # 1. Internet connection
-# 2. Installed the following libraries: pandas_datareader, datetime, yfinance, pandas, prophet, matplotlib
+# 2. Installed the following libraries: pandas_datareader, datetime, yfinance, pandas, prophet, matplotlib (install using pip install in command prompt)
 
 # I run this code on my computer in Visual Studio Code on Python 3.11.3 64-bit from Microsoft Store and it works with this configuration
 
@@ -71,7 +71,8 @@ for i in range(len(ticker_list)): #'len' ensures that Python will iterate
     df1 = pd.read_csv('./data/' + str(files[i]) + '.csv')
 
 # The code above saves the desired data from Yahoo Finance on my computer 
-# in a folder named 'data' created automatically on the desktop.
+# in a folder named 'data' created automatically on the desktop with basic
+# statistics about the stock.
 
 # Below we start to import those saved files to Python and analyse them
  
