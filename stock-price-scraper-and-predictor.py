@@ -133,7 +133,7 @@ for ticker in ticker_list:
 
 # This program could also be easily adjusted to serve one's needs. I, for 
 # example, could use this program to make graphs for my Bachelor Thesis if I
-# wrote it about specific stocks and specific periods. In this case, I could 
+# wrote my thesis about specific stocks and specific periods. In this case, I could 
 # scrape Yahoo Finance for specific data and then replace the Prophet based 
 # stock prediction model with simple Matplotlib library to create elegant 
 # graphs that contain only the data that I need in order to improve my 
