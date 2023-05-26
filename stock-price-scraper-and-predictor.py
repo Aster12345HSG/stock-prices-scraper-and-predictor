@@ -15,6 +15,7 @@
 
 # I run this code on my computer in Visual Studio Code on Python 3.11.3 64-bit from Microsoft Store and it works with this configuration
 
+# Import the necessary libraries and packages
 from pandas_datareader import data as pdr
 from datetime import date
 import yfinance as yf
