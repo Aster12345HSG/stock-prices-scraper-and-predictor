@@ -127,9 +127,9 @@ for ticker in ticker_list:
 # Microsoft stock prices and their predicted future value. I have run this 
 # program several times for different periods and stocks with past data to
 # check retrospectively if it was correct and it seems to have a decent 
-# correctness rate of about 70% for predicting them up to a month into the 
-# future (which is not as good as 100%, but better than the odds of pure 
-# chance which are 50%).
+# correctness rate of about 65% for predicting them up to a month into the 
+# future (which is not as good as 100% of course, but better than the odds 
+# of pure chance which are 50%).
 
 # This program could also be easily adjusted to serve one's needs. I, for 
 # example, could use this program to make graphs for my Bachelor Thesis if I
